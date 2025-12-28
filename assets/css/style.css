@@ -98,6 +98,10 @@ h1 {
   font-weight: 500;
 }
 
+.meta a:hover {
+  text-decoration: underline;
+}
+
 .meta span {
   margin: 0 8px;
   color: var(--muted);
