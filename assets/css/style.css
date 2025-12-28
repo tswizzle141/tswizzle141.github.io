@@ -168,13 +168,13 @@ h1 {
 
 .contact-icons {
   display: flex;
-  gap: 16px;
-  margin-top: 18px;
+  align-items: center;
+  gap: 14px;             
+  margin-top: 14px;
 }
-
 .contact-icons a {
-  width: 32px;
-  height: 32px;
+  width: 22px;         
+  height: 22px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -182,14 +182,13 @@ h1 {
   color: #ffffff;
   text-decoration: none;
 }
-
 .contact-icons svg {
-  width: 22px;
-  height: 22px;
+  width: 18px;        
+  height: 18px;
+  stroke-width: 1.6;   
 }
-
 .contact-icons a:hover {
-  opacity: 0.75;
+  opacity: 0.7;
 }
 
 hr {
