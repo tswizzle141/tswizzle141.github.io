@@ -201,7 +201,7 @@ h1 {
 }
 .contact-photo img {
   width: 80%;
-  max-width: 100px;
+  max-width: 200px;
   border-radius: 16px;
   border: 1px solid var(--border);
   box-shadow: 0 12px 30px rgba(123, 95, 207, 0.25);
