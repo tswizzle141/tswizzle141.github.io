@@ -1,11 +1,19 @@
 :root {
-  --bg: #faf7fd;
-  --panel: #ffffff;
-  --primary: #7b5fcf;        /* tím lila */
-  --secondary: #b79ced;      /* tím pastel nhạt */
-  --text: #2c243b;
-  --muted: #6f6780;
-  --border: #e6def2;
+  /* BACKGROUND */
+  --bg: #7a5ccf;              /* lila pastel nền chính */
+  --panel: #8469d8;           /* panel / section nhẹ hơn */
+
+  /* TEXT */
+  --text: #ffffff;            /* chữ chính: TRẮNG */
+  --muted: #efeafd;           /* chữ phụ: trắng tím rất nhạt */
+
+  /* ACCENT */
+  --primary: #e9ddff;         /* link / highlight */
+  --secondary: #cdbbff;       /* accent phụ */
+
+  /* BORDERS */
+  --border: rgba(255,255,255,0.25);
+
   --max-width: 980px;
 }
 
