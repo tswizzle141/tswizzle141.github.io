@@ -1,11 +1,11 @@
 :root {
-  --bg: #8a71dd;              
-  --panel: #8469d8;  
+  --bg: #D6B3E8;              
+  --panel: rgba(255,255,255,0.10);  
   --text: #ffffff; 
-  --muted: #efeafd;
-  --primary: #e9ddff;
-  --secondary: #cdbbff; 
-  --border: rgba(255,255,255,0.25);
+  --muted: rgba(255,255,255,0.82);
+  --primary: #f7effc;
+  --secondary: #e8d6f3; 
+  --border: rgba(255,255,255,0.28);
   --max-width: 980px;
 }
 
@@ -25,8 +25,8 @@ body {
 .topbar {
   position: sticky;
   top: 0;
-  background: rgba(122, 92, 207, 0.92);
-  backdrop-filter: blur(10px);
+  background: rgba(201, 160, 220, 0.92);
+  backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--border);
 }
 
@@ -41,17 +41,17 @@ body {
 
 .brand {
   font-weight: 600;
-  color: var(--primary);
+  color: #ffffff;
 }
 
 .nav-links a {
   margin-left: 18px;
   text-decoration: none;
-  color: var(--muted);
+  color: rgba(255,255,255,0.85);
 }
 
 .nav-links a.active {
-  color: var(--primary);
+  color: #ffffff;
   font-weight: 500;
 }
 
@@ -86,6 +86,10 @@ h1 {
 .paragraph {
   color: var(--muted);
   max-width: 65ch;
+}
+
+ul, li {
+  color: var(--muted);
 }
 
 .meta {
