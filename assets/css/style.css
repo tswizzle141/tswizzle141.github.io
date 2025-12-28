@@ -85,20 +85,30 @@ h1 {
   margin-bottom: 12px;
 }
 
-.paragraph a:hover,
-
 .meta {
   margin-top: 14px;
 }
 
+.paragraph a {
+  color: #ffffff;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.paragraph a:hover {
+  opacity: 0.85;
+  text-decoration: none;
+}
+
 .meta a {
-  color: #ffffff;         
-  font-weight: 500;       
-  text-decoration: none;  
+  color: #ffffff;
+  font-weight: 500;
+  text-decoration: none;
 }
 
 .meta a:hover {
   opacity: 0.85;
+  text-decoration: none;
 }
 
 .meta span {
