@@ -213,22 +213,6 @@ h1 {
   gap: 48px;
   margin-top: 24px;
 }
-.contact-left{
-  flex: 1 1 auto;
-  min-width: 320px;
-}
-.contact-right{
-  flex: 0 0 auto;
-  margin-left: auto;     
-}
-.contact-avatar{
-  width: 260px;
-  height: 260px;
-  object-fit: cover;
-  border-radius: 18px;
-  border: 1px solid var(--border);
-  box-shadow: 0 12px 30px rgba(123, 95, 207, 0.25);
-}
 
 hr {
   border: none;
