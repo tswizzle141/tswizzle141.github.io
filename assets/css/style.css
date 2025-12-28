@@ -200,7 +200,7 @@ h1 {
   max-width: 520px;
 }
 .contact-photo img {
-  width: 100%;
+  width: 80%;
   max-width: 200px;
   border-radius: 16px;
   border: 1px solid var(--border);
