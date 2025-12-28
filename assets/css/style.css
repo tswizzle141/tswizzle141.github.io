@@ -142,13 +142,16 @@ h1 {
 }
 
 .contact-list {
-  list-style: disc;
-  list-style-position: inside; 
-  padding-left: 0 !important;
-  margin-left: 0 !important;
+  list-style-type: disc;
+  list-style-position: inside;   
+  padding-left: 0;              
+  margin-left: 0;
+  margin-top: 18px;
 }
 .contact-list li {
-  margin-bottom: 6px;
+  margin-bottom: 12px;          
+  line-height: 1.6;             
+  color: var(--muted);
 }
 .contact-list a,
 .contact-list a:visited,
