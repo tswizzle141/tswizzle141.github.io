@@ -1,1 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hai Ninh Nham Do</title>
+
+  <meta name="description" content="Personal academic website of Hai Ninh Nham Do." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <!-- TOP NAV -->
+  <header class="topbar">
+    <nav class="nav">
+      <div class="brand">tswizzle141</div>
+      <div class="nav-links">
+        <a class="active" href="#">about</a>
+        <a href="#">publications</a>
+        <a href="#">cv</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1><span class="strong">Hai Ninh</span> Nham Do</h1>
+
+        <p class="lead">
+          I am a researcher / engineer working on
+          <b>robotics</b>, <b>autonomous systems</b>, and <b>AI</b>.
+        </p>
+
+        <p class="paragraph">
+          My interests focus on perception, structured world models, and
+          learning-based approaches for real-world robotic systems.
+          I enjoy working at the intersection of theory and real hardware.
+        </p>
+
+        <div class="meta">
+          <a href="mailto:you@email.com">you@email.com</a>
+          <span>·</span>
+          <a href="https://github.com/tswizzle141" target="_blank">GitHub</a>
+          <span>·</span>
+          <a href="#">Google Scholar</a>
+        </div>
+      </div>
+
+      <div class="hero-photo">
+        <img src="assets/img/profile.jpg" alt="Profile photo">
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- PROFESSIONAL SERVICE -->
+    <section>
+      <h2>Professional Service</h2>
+      <ul>
+        <li><b>Research Assistant</b> — Robotics / Autonomous Systems</li>
+        <li><b>Project Contributor</b> — Perception & Sensor Fusion</li>
+      </ul>
+    </section>
+
+    <hr />
+
+    <!-- TEACHING -->
+    <section>
+      <h2>Teaching Assistant</h2>
+      <ul>
+        <li>Introduction to Robotics</li>
+        <li>Computer Vision</li>
+      </ul>
+    </section>
+
+    <footer class="footer">
+      © <span id="year"></span> Hai Ninh Nham Do
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
 
