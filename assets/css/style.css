@@ -21,7 +21,6 @@ body {
   line-height: 1.7;
 }
 
-/* NAVBAR */
 .topbar {
   position: sticky;
   top: 0;
@@ -55,7 +54,6 @@ body {
   font-weight: 500;
 }
 
-/* LAYOUT */
 .container {
   max-width: var(--max-width);
   margin: auto;
@@ -117,6 +115,7 @@ h1 {
 }
 
 .hero-text a,
+
 .hero-text a:visited {
   color: #ffffff;
   text-decoration: none;
@@ -159,7 +158,6 @@ h1 {
   opacity: 0.85;
   text-decoration: none;
 }
-
 
 hr {
   border: none;
