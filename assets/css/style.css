@@ -166,6 +166,32 @@ h1 {
   text-decoration: none !important;
 }
 
+.contact-icons {
+  display: flex;
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.contact-icons a {
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.contact-icons svg {
+  width: 22px;
+  height: 22px;
+}
+
+.contact-icons a:hover {
+  opacity: 0.75;
+}
+
 hr {
   border: none;
   border-top: 1px solid var(--border);
