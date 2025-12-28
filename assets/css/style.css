@@ -116,7 +116,24 @@ h1 {
   color: var(--muted);
 }
 
-/* IMAGE */
+.hero-text a,
+.hero-text a:visited {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: none;
+  background: none;
+}
+
+.hero-text a:hover {
+  opacity: 0.85;
+  text-decoration: none;
+}
+
+.hero-text a:active {
+  color: #ffffff;
+}
+
 .hero-photo img {
   width: 100%;
   max-width: 300px;
