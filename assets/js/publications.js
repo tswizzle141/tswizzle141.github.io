@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const absButtons = document.querySelectorAll(".pub-abs");
 
-  function closeAllExcept(exceptBtn) {
+  function closeOthers(exceptBtn) {
     absButtons.forEach(btn => {
       if (btn === exceptBtn) return;
       btn.setAttribute("aria-expanded", "false");
@@ -18,8 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const expanded = btn.getAttribute("aria-expanded") === "true";
 
-      // accordion behavior: open one -> close others
-      if (!expanded) closeAllExcept(btn);
+      if (!expanded) closeOthers(btn);
 
       btn.setAttribute("aria-expanded", String(!expanded));
       if (expanded) abs.setAttribute("hidden", "");
