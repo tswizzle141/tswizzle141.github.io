@@ -1,31 +1,30 @@
-/* ===== page ===== */
+/* Page wrapper */
 .pub-page{
   max-width: 980px;
   margin: 40px auto;
   padding: 0 20px;
-  color: rgba(255,255,255,0.92);
 }
 
+/* Title like Marcel */
 .pub-page-header{
   padding-bottom: 18px;
-  border-bottom: 1px solid rgba(255,255,255,0.10);
+  border-bottom: 1px solid rgba(0,0,0,0.15);
   margin-bottom: 22px;
 }
 
 .pub-page-title{
+  margin: 0 0 8px 0;
   font-size: 56px;
   font-weight: 300;
-  margin: 0 0 8px 0;
   letter-spacing: 0.2px;
 }
 
 .pub-page-subtitle{
   margin: 0;
-  opacity: 0.75;
-  font-size: 16px;
+  opacity: 0.8;
 }
 
-/* ===== year group ===== */
+/* Year grouping + big year label on the right */
 .pub-year-group{
   position: relative;
   padding: 18px 0 8px 0;
@@ -43,25 +42,26 @@
 
 .pub-sep{
   border: none;
-  border-top: 1px solid rgba(255,255,255,0.10);
+  border-top: 1px solid rgba(0,0,0,0.12);
   margin: 18px 0;
 }
 
-/* ===== item layout ===== */
-.pub-item{
+/* Keep your card structure, but align thumb + body like Marcel */
+article.pub{
   display: grid;
   grid-template-columns: 112px 1fr;
   gap: 18px;
-  padding: 10px 0;
+  align-items: start;
+  margin: 14px 0;
 }
 
+/* Your existing .pub-thumb is a div */
 .pub-thumb{
   width: 112px;
   height: 84px;
-  border-radius: 6px;
+  border-radius: 10px;
   overflow: hidden;
-  display: block;
-  border: 1px solid rgba(255,255,255,0.10);
+  border: 1px solid rgba(0,0,0,0.12);
 }
 
 .pub-thumb img{
@@ -70,76 +70,32 @@
   object-fit: cover;
 }
 
-/* ===== inherited blocks (from your old pub) ===== */
-.pub-body{ min-width: 0; }
-
+/* Keep your names/title blocks */
 .pub-title{
   margin: 0 0 6px 0;
-  font-size: 20px;
   line-height: 1.25;
-  font-weight: 600;
 }
 
-.pub-authors{
-  margin: 0 0 4px 0;
-  font-size: 15px;
-  opacity: 0.90;
-}
+.pub-authors{ margin: 0 0 4px 0; }
+.pub-venue{ margin: 0 0 12px 0; }
 
-.pub-venue{
-  margin: 0 0 12px 0;
-  font-size: 15px;
-  opacity: 0.75;
-}
-
-.pub-venue em{ font-style: italic; }
-
-/* ===== buttons ===== */
+/* Buttons (if your style.css already has pub-btn, this will gently enhance) */
 .pub-actions{
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
-  margin: 0 0 10px 0;
+  margin-bottom: 10px;
 }
 
-.pub-btn{
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  height: 30px;
-  padding: 0 14px;
-  border-radius: 3px;
-  border: 1px solid rgba(255,255,255,0.35);
-  color: rgba(255,255,255,0.92);
-  background: transparent;
-  text-decoration: none;
-  font-size: 12px;
-  letter-spacing: 0.5px;
-  cursor: pointer;
-}
-
-.pub-btn:hover{
-  border-color: rgba(255,255,255,0.75);
-}
-
-/* ===== abstract ===== */
+/* Abstract box like Marcel */
 .pub-abstract{
-  border: 1px dashed rgba(255,255,255,0.20);
-  padding: 12px 12px;
-  border-radius: 4px;
-  background: rgba(255,255,255,0.03);
+  border: 1px dashed rgba(0,0,0,0.25);
+  padding: 12px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.25);
 }
 
 .pub-abstract p{
   margin: 0;
-  font-size: 14px;
-  opacity: 0.90;
   line-height: 1.55;
-}
-
-/* ===== highlight your name ===== */
-.author-me{
-  font-weight: 700;
-  text-decoration: underline;
-  text-underline-offset: 3px;
 }
