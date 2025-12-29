@@ -231,6 +231,53 @@ h1 {
   color: var(--muted);
 }
 
+.publications {
+  margin-top: 48px;
+}
+.publications h2 {
+  margin-bottom: 28px;
+}
+.pub-item {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 32px;
+  align-items: flex-start;
+}
+.pub-item img {
+  width: 140px;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+.pub-content h3 {
+  margin: 0 0 6px 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+.pub-content .authors {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+.pub-content .venue {
+  margin: 4px 0 10px;
+  font-size: 14px;
+}
+.pub-links a {
+  display: inline-block;
+  margin-right: 8px;
+  padding: 4px 10px;
+  font-size: 12px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.pub-links a:hover {
+  opacity: 0.8;
+}
+
+
 hr {
   border: none;
   border-top: 1px solid var(--border);
@@ -271,14 +318,13 @@ ul, li {
     width: 200px;
     height: 200px;
   }
-}
 
-@media (max-width: 520px){
-  .contact-layout{
+  .pub-item {
     flex-direction: column;
   }
-  .contact-right{
-    margin-left: 0;
+  .pub-item img {
+    width: 100%;
+    max-width: 320px;
   }
 }
 
