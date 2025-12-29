@@ -13,7 +13,20 @@
 </head>
 
 <body>
-  <!-- (giữ top nav của bạn nếu có) -->
+  <header class="topbar">
+    <nav class="nav">
+      <div class="brand">tswizzle141</div>
+      <div class="nav-links">
+        <a href="index.html">about</a>
+        <a class="active" href="publications.html">publications</a>
+        <a href="https://drive.google.com/file/d/1OVM9S5p8qkyJMebVIUfPPaBYocQmMVvc/view?usp=drive_link" 
+           target="_blank" 
+           rel="noopener">cv</a>
+        <a href="interests.html">interests</a>
+        <a href="contact.html">contact</a>
+      </div>
+    </nav>
+  </header>
 
   <main>
     <section class="pub-page">
@@ -26,48 +39,50 @@
 
       <!-- ===== YEAR: 2025 ===== -->
       <div class="pub-year-group">
-        <div class="pub-year-label">2025</div>
+        <div class="pub-year-col">2025</div>
+        <div class="pub-year-list">
 
-        <!-- Pub 1 -->
-        <article class="pub">
-          <!-- ✅ giữ đúng kiểu thumb của bạn -->
-          <div class="pub-thumb">
-            <img src="./assets/img/glac.jpeg" alt="Publication thumbnail">
-          </div>
-
-          <div class="pub-body">
-            <h3 class="pub-title">
-              GLAC-Unet: Global-Local Active Contour Loss with an Efficient U-Shaped Architecture
-              for Multiclass Medical Image Segmentation
-            </h3>
-
-            <div class="pub-authors">
-              Minh-Nhat Trinh, Thi-Thao Tran, <strong>Do-Hai-Ninh Nham</strong>, Men-Tzung Lo, Van-Truong Pham
+          <!-- Pub 1 -->
+          <article class="pub">
+            <!-- ✅ giữ đúng kiểu thumb của bạn -->
+            <div class="pub-thumb">
+              <img src="./assets/img/glac.jpeg" alt="Publication thumbnail">
             </div>
-
-            <div class="pub-venue">
-              <em>Journal of Imaging Informatics in Medicine, Volume 38, 2025</em>
+  
+            <div class="pub-body">
+              <h3 class="pub-title">
+                GLAC-Unet: Global-Local Active Contour Loss with an Efficient U-Shaped Architecture
+                for Multiclass Medical Image Segmentation
+              </h3>
+  
+              <div class="pub-authors">
+                Minh-Nhat Trinh, Thi-Thao Tran, <strong>Do-Hai-Ninh Nham</strong>, Men-Tzung Lo, Van-Truong Pham
+              </div>
+  
+              <div class="pub-venue">
+                <em>Journal of Imaging Informatics in Medicine, Volume 38, 2025</em>
+              </div>
+  
+              <div class="pub-actions">
+                <button class="pub-btn pub-abs" type="button" aria-expanded="false">
+                  ABSTRACT
+                </button>
+  
+                <a class="pub-btn pub-site"
+                   href="https://link.springer.com/article/10.1007/..."
+                   target="_blank" rel="noopener">
+                  WEBSITE
+                </a>
+              </div>
+  
+              <div class="pub-abstract" hidden>
+                <p>
+                  The field of medical image segmentation powered by deep learning has ...
+                </p>
+              </div>
             </div>
-
-            <div class="pub-actions">
-              <button class="pub-btn pub-abs" type="button" aria-expanded="false">
-                ABSTRACT
-              </button>
-
-              <a class="pub-btn pub-site"
-                 href="https://link.springer.com/article/10.1007/..."
-                 target="_blank" rel="noopener">
-                WEBSITE
-              </a>
-            </div>
-
-            <div class="pub-abstract" hidden>
-              <p>
-                The field of medical image segmentation powered by deep learning has ...
-              </p>
-            </div>
-          </div>
-        </article>
+          </article>
+        </div>
       </div>
 
       <hr class="pub-sep" />
