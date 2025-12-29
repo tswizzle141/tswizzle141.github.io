@@ -60,6 +60,13 @@ body {
   padding: 40px 20px;
 }
 
+.section-title {
+  font-size: 56px;
+  font-weight: 300;
+  letter-spacing: 0.2px;
+  margin: 0 0 8px 0;
+}
+
 .hero {
   display: grid;
   grid-template-columns: 1.3fr 0.7fr;
