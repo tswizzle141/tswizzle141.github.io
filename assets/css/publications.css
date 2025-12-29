@@ -112,3 +112,15 @@ article.pub{
   margin: 0;
   line-height: 1.55;
 }
+
+.pub-body {
+  padding-right: 90px;   /* = hoặc > width của year */
+}
+
+/* Title xuống dòng, không cho lấn sang year */
+.pub-title {
+  display: block;
+  max-width: 100%;
+  line-height: 1.25;
+  margin-bottom: 6px;
+}
