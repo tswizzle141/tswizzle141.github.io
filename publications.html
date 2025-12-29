@@ -1,93 +1,126 @@
-<section class="pub-page">
-  <header class="pub-page-header">
-    <h1 class="pub-page-title">Publications</h1>
-    <p class="pub-page-subtitle">Publications by year in reversed chronological order.</p>
-  </header>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Publications</title>
 
-  <!-- ===== YEAR GROUP: 2025 ===== -->
-  <div class="pub-year-group">
-    <div class="pub-year-label">2025</div>
+  <!-- your main css -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
 
-    <article class="pub-item">
-      <a class="pub-thumb" href="https://example.com/paper1" target="_blank" rel="noopener">
-        <img src="/assets/img/pubs/paper_2025_1.jpg" alt="Paper thumbnail">
-      </a>
+  <!-- ✅ publications (Marcel-like) -->
+  <link rel="stylesheet" href="./assets/css/publications.css" />
+</head>
 
-      <!-- ✅ KẾ THỪA pub-body của bạn -->
-      <div class="pub-body">
-        <h3 class="pub-title">
-          DLO-Splatting: Tracking Deformable Linear Objects Using 3D Gaussian Splatting
-        </h3>
+<body>
+  <!-- (giữ top nav của bạn nếu có) -->
 
-        <div class="pub-authors">
-          Holly Dinkel, <span class="author-me">Marcel Büsching</span>, Alberta Longhini, and 5 more authors
-        </div>
+  <main>
+    <section class="pub-page">
+      <header class="pub-page-header">
+        <h1 class="pub-page-title">publications</h1>
+        <p class="pub-page-subtitle">
+          publications by year in reversed chronological order.
+        </p>
+      </header>
 
-        <div class="pub-venue">
-          <em>ICRA 2024 Workshop on 3D Visual Representations for Robot Manipulation</em>, May 2025
-        </div>
+      <!-- ===== YEAR: 2025 ===== -->
+      <div class="pub-year-group">
+        <div class="pub-year-label">2025</div>
 
-        <div class="pub-actions">
-          <button class="pub-btn pub-abs" type="button" aria-expanded="false">
-            ABS
-          </button>
-          <a class="pub-btn pub-site" href="https://example.com/paper1" target="_blank" rel="noopener">
-            HTML
-          </a>
-        </div>
+        <!-- Pub 1 -->
+        <article class="pub">
+          <!-- ✅ giữ đúng kiểu thumb của bạn -->
+          <div class="pub-thumb">
+            <img src="./assets/img/glac.jpeg" alt="Publication thumbnail">
+          </div>
 
-        <div class="pub-abstract" hidden>
-          <p>
-            Đây là abstract của paper 2025...
-          </p>
-        </div>
+          <div class="pub-body">
+            <h3 class="pub-title">
+              GLAC-Unet: Global-Local Active Contour Loss with an Efficient U-Shaped Architecture
+              for Multiclass Medical Image Segmentation
+            </h3>
+
+            <div class="pub-authors">
+              Minh-Nhat Trinh, Thi-Thao Tran, <strong>Do-Hai-Ninh Nham</strong>, Men-Tzung Lo, Van-Truong Pham
+            </div>
+
+            <div class="pub-venue">
+              <em>Journal of Imaging Informatics in Medicine, Volume 38, 2025</em>
+            </div>
+
+            <div class="pub-actions">
+              <button class="pub-btn pub-abs" type="button" aria-expanded="false">
+                ABSTRACT
+              </button>
+
+              <a class="pub-btn pub-site"
+                 href="https://link.springer.com/article/10.1007/..."
+                 target="_blank" rel="noopener">
+                WEBSITE
+              </a>
+            </div>
+
+            <div class="pub-abstract" hidden>
+              <p>
+                The field of medical image segmentation powered by deep learning has ...
+              </p>
+            </div>
+          </div>
+        </article>
       </div>
-    </article>
-  </div>
 
-  <hr class="pub-sep">
+      <hr class="pub-sep" />
 
-  <!-- ===== YEAR GROUP: 2024 ===== -->
-  <div class="pub-year-group">
-    <div class="pub-year-label">2024</div>
+      <!-- ===== YEAR: 2023 ===== -->
+      <div class="pub-year-group">
+        <div class="pub-year-label">2023</div>
 
-    <article class="pub-item">
-      <a class="pub-thumb" href="https://example.com/paper2" target="_blank" rel="noopener">
-        <img src="/assets/img/pubs/paper_2024_1.jpg" alt="Paper thumbnail">
-      </a>
+        <!-- Pub 2 -->
+        <article class="pub">
+          <div class="pub-thumb">
+            <img src="./assets/img/pubs/paper_2023_1.jpg" alt="Publication thumbnail">
+          </div>
 
-      <div class="pub-body">
-        <h3 class="pub-title">
-          Cloth-Splatting: 3D Cloth State Estimation from RGB Supervision
-        </h3>
+          <div class="pub-body">
+            <h3 class="pub-title">
+              An EfficientNet-encoder U-Net Joint Residual Refinement Module with Tversky–Kahneman
+              Baroni–Urbani–Buser loss for Biomedical Image Segmentation
+            </h3>
 
-        <div class="pub-authors">
-          Alberta Longhini, <span class="author-me">Marcel Büsching</span>, Bardienus Pieter Duisterhof, and 4 more authors
-        </div>
+            <div class="pub-authors">
+              <strong>Do-Hai-Ninh Nham</strong>, Minh-Nhat Trinh, Viet-Dung Nguyen, Van-Truong Pham, Thi-Thao Tran
+            </div>
 
-        <div class="pub-venue">
-          <em>8th Annual Conference on Robot Learning (CoRL)</em>, Nov 2024
-        </div>
+            <div class="pub-venue">
+              <em>Biomedical Signal Processing and Control, Volume 83, May 2023, 104631</em>
+            </div>
 
-        <div class="pub-actions">
-          <button class="pub-btn pub-abs" type="button" aria-expanded="false">
-            ABS
-          </button>
-          <a class="pub-btn pub-site" href="https://example.com/paper2.pdf" target="_blank" rel="noopener">
-            PDF
-          </a>
-          <a class="pub-btn pub-site" href="https://example.com/paper2" target="_blank" rel="noopener">
-            WEBSITE
-          </a>
-        </div>
+            <div class="pub-actions">
+              <button class="pub-btn pub-abs" type="button" aria-expanded="false">
+                ABSTRACT
+              </button>
 
-        <div class="pub-abstract" hidden>
-          <p>
-            Đây là abstract của paper 2024...
-          </p>
-        </div>
+              <a class="pub-btn pub-site"
+                 href="https://www.sciencedirect.com/science/article/..."
+                 target="_blank" rel="noopener">
+                WEBSITE
+              </a>
+            </div>
+
+            <div class="pub-abstract" hidden>
+              <p>
+                Quantitative analysis on biomedical images has been on increasing demand ...
+              </p>
+            </div>
+          </div>
+        </article>
       </div>
-    </article>
-  </div>
-</section>
 
+    </section>
+  </main>
+
+  <!-- ✅ publications JS -->
+  <script src="./assets/js/publications.js"></script>
+</body>
+</html>
