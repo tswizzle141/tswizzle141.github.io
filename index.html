@@ -118,6 +118,57 @@
           </div>
         </div>
       </article>
+
+      <!-- Pub 2 -->
+      <article class="pub">
+        <div class="pub-thumb">
+          <img src="./assets/img/glac.jpeg" alt="Publication thumbnail">
+        </div>
+    
+        <div class="pub-body">
+          <h3 class="pub-title">
+            GLAC-Unet: Global-Local Active Contour Loss with an Efficient U-Shaped Architecture 
+            for Multiclass Medical Image Segmentation
+          </h3>
+    
+          <div class="pub-authors">
+            Minh-Nhat Trinh, Thi-Thao Tran, <strong>Do-Hai-Ninh Nham</strong>, Men-Tzung Lo, Van-Truong Pham
+          </div>
+    
+          <div class="pub-venue">
+            <em>Journal of Imaging Informatics in Medicine, Volume 38, 2025</em>
+          </div>
+    
+          <div class="pub-actions">
+            <button class="pub-btn pub-abs" type="button" aria-expanded="false">
+              ABSTRACT</button>
+    
+            <a class="pub-btn pub-site" href="https://link.springer.com/article/10.1007/s10278-025-01387-9" 
+              target="_blank" rel="noopener">WEBSITE</a>
+          </div>
+    
+          <div class="pub-abstract" hidden>
+            <p>The field of medical image segmentation powered by deep learning has recently received substantial attention, 
+            with a significant focus on developing novel architectures and designing effective loss functions. 
+            Traditional loss functions, such as Dice loss and Cross-Entropy loss, predominantly rely on global metrics to compare predictions with labels. 
+            However, these global measures often struggle to address challenges such as occlusion and nonuni-form intensity. 
+            To overcome these issues, in this study, we propose a novel loss function, termed Global–Local Active Contour (GLAC) loss, 
+            which integrates both global and local image features, reformulated within the Mumford-Shah framework and extended for multiclass segmentation. 
+            This approach enables the neural network model to be trained end-to-end while simultaneously segmenting multiple classes. 
+            In addition to this, we enhance the U-Net architecture by incorporating Dense Layers, Convolutional Block Attention Modules, and DropBlock. 
+            These improvements enable the model to more effectively combine contextual information across layers, capture richer semantic details, 
+            and mitigate overfitting, resulting in more precise segmentation outcomes. We validate our proposed method, namely GLAC-Unet, 
+            which utilizes the GLAC loss in conjunction with our modified U-shaped architecture, on three biomedical segmentation datasets 
+            that span a range of modalities, including two-dimensional and three-dimensional images, such as dermoscopy, cardiac magnetic resonance imaging, 
+            and brain magnetic resonance imaging. Extensive experiments demonstrate the promising performance of our approach, 
+            achieving a Dice score (DSC) of 0.9125 on the ISIC-2018 dataset, 0.9260 on the Automated Cardiac Diagnosis Challenge (ACDC) 2017, 
+            and 0.927 on the Infant Brain MRI Segmentation Challenge 2019. Furthermore, statistical significance testing with p-values 
+            consistently smaller than 0.05 on the ISIC-2018 and ACDC datasets confirms the superior performance of the proposed method 
+            compared to other state-of-the-art models. These results highlight the robustness and effectiveness of our multiclass segmentation technique, 
+            underscoring its potential for biomedical image analysis.</p>
+          </div>
+        </div>
+      </article>
     
     </section>
 
