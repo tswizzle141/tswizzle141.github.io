@@ -121,6 +121,28 @@
     
     </section>
 
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll(".pub-abs").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const abstract = btn
+            .closest("article")
+            .querySelector(".pub-abstract");
+    
+          const expanded = btn.getAttribute("aria-expanded") === "true";
+    
+          btn.setAttribute("aria-expanded", !expanded);
+    
+          if (expanded) {
+            abstract.setAttribute("hidden", "");
+          } else {
+            abstract.removeAttribute("hidden");
+          }
+        });
+      });
+    });
+    </script>
+
     <footer class="footer">
       © <span id="year"></span> Hai Ninh Nham Do
     </footer>
