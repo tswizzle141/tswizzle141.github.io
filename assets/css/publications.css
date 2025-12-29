@@ -24,20 +24,33 @@
   opacity: 0.8;
 }
 
-/* Year grouping + big year label on the right */
 .pub-year-group{
-  position: relative;
-  padding: 18px 0 8px 0;
+  display: grid;
+  grid-template-columns: 1fr 90px;  /* list | year */
+  gap: 18px;
+  align-items: start;
+  padding: 18px 0;
 }
 
-.pub-year-label{
-  position: absolute;
-  right: 0;
-  top: 18px;
+.pub-year-col{
+  grid-column: 2;
+  text-align: right;
   font-size: 44px;
   font-weight: 300;
-  opacity: 0.25;
-  pointer-events: none;
+  opacity: 0.28;
+  line-height: 1;
+  user-select: none;
+}
+
+.pub-year-list{
+  grid-column: 1;
+}
+
+/* separator between years */
+.pub-sep{
+  border: none;
+  border-top: 1px solid rgba(255,255,255,0.18);
+  margin: 6px 0;
 }
 
 .pub-sep{
