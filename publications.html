@@ -4,11 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Publications</title>
-
-  <!-- your main css -->
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
   <link rel="stylesheet" href="./assets/css/style.css" />
-
-  <!-- ✅ publications (Marcel-like) -->
   <link rel="stylesheet" href="./assets/css/publications.css" />
 </head>
 
@@ -31,7 +28,7 @@
   <main>
     <section class="pub-page">
       <header class="pub-page-header">
-        <h1 class="pub-page-title">publications</h1>
+        <h1>Publications</h1>
         <p class="pub-page-subtitle">
           publications by year in reversed chronological order.
         </p>
@@ -44,15 +41,14 @@
   
         <!-- Pub 1 -->
         <article class="pub">
-        <!-- ✅ giữ đúng kiểu thumb của bạn -->
         <div class="pub-thumb">
           <img src="./assets/img/glac.jpeg" alt="Publication thumbnail">
         </div>
   
         <div class="pub-body">
           <h3 class="pub-title">
-            GLAC-Unet: Global-Local Active Contour Loss with an Efficient U-Shaped Architecture
-            for Multiclass Medical Image Segmentation
+            GLAC-Unet: Global-Local Active Contour Loss with an Efficient U-Shaped 
+            Architecture for Multiclass Medical Image Segmentation
           </h3>
   
           <div class="pub-authors">
@@ -69,16 +65,31 @@
             </button>
   
             <a class="pub-btn pub-site"
-               href="https://link.springer.com/article/10.1007/..."
+               href="https://link.springer.com/article/10.1007/s10278-025-01387-9"
                target="_blank" rel="noopener">
               WEBSITE
             </a>
           </div>
   
           <div class="pub-abstract" hidden>
-            <p>
-              The field of medical image segmentation powered by deep learning has ...
-            </p>
+            <p>The field of medical image segmentation powered by deep learning has recently received substantial attention, 
+            with a significant focus on developing novel architectures and designing effective loss functions. 
+            Traditional loss functions, such as Dice loss and Cross-Entropy loss, predominantly rely on global metrics to compare predictions with labels. 
+            However, these global measures often struggle to address challenges such as occlusion and nonuni-form intensity. 
+            To overcome these issues, in this study, we propose a novel loss function, termed Global–Local Active Contour (GLAC) loss, 
+            which integrates both global and local image features, reformulated within the Mumford-Shah framework and extended for multiclass segmentation. 
+            This approach enables the neural network model to be trained end-to-end while simultaneously segmenting multiple classes. 
+            In addition to this, we enhance the U-Net architecture by incorporating Dense Layers, Convolutional Block Attention Modules, and DropBlock. 
+            These improvements enable the model to more effectively combine contextual information across layers, capture richer semantic details, 
+            and mitigate overfitting, resulting in more precise segmentation outcomes. We validate our proposed method, namely GLAC-Unet, 
+            which utilizes the GLAC loss in conjunction with our modified U-shaped architecture, on three biomedical segmentation datasets 
+            that span a range of modalities, including two-dimensional and three-dimensional images, such as dermoscopy, cardiac magnetic resonance imaging, 
+            and brain magnetic resonance imaging. Extensive experiments demonstrate the promising performance of our approach, 
+            achieving a Dice score (DSC) of 0.9125 on the ISIC-2018 dataset, 0.9260 on the Automated Cardiac Diagnosis Challenge (ACDC) 2017, 
+            and 0.927 on the Infant Brain MRI Segmentation Challenge 2019. Furthermore, statistical significance testing with p-values 
+            consistently smaller than 0.05 on the ISIC-2018 and ACDC datasets confirms the superior performance of the proposed method 
+            compared to other state-of-the-art models. These results highlight the robustness and effectiveness of our multiclass segmentation technique, 
+            underscoring its potential for biomedical image analysis.</p>
           </div>
         </article>
         </div>
@@ -95,13 +106,13 @@
         <!-- Pub 2 -->
         <article class="pub">
           <div class="pub-thumb">
-            <img src="./assets/img/pubs/paper_2023_1.jpg" alt="Publication thumbnail">
+            <img src="./assets/img/tk-bub.jpg" alt="Publication thumbnail">
           </div>
 
           <div class="pub-body">
             <h3 class="pub-title">
-              An EfficientNet-encoder U-Net Joint Residual Refinement Module 
-              with Tversky–Kahneman Baroni–Urbani–Buser loss for Biomedical Image Segmentation
+              An EfficientNet-encoder U-Net Joint Residual Refinement Module with 
+              Tversky–Kahneman Baroni–Urbani–Buser loss for Biomedical Image Segmentation
             </h3>
 
             <div class="pub-authors">
@@ -118,16 +129,25 @@
               </button>
 
               <a class="pub-btn pub-site"
-                 href="https://www.sciencedirect.com/science/article/..."
+                 href="https://www.sciencedirect.com/science/article/pii/S1746809423000642"
                  target="_blank" rel="noopener">
                 WEBSITE
               </a>
             </div>
 
             <div class="pub-abstract" hidden>
-              <p>
-                Quantitative analysis on biomedical images has been on increasing demand ...
-              </p>
+              <p>Quantitative analysis on biomedical images has been on increasing demand nowadays and 
+              for modern computer vision approaches. While recently advanced procedures have been enforced, 
+              there is still necessity in optimizing network architecture and loss functions. Inspired by 
+              the pretrained EfficientNet-B4 and the refinement module in boundary-aware problems, we propose 
+              a new two-stage network which is called EffcientNet-encoder U-Net Joint Residual Refinement Module 
+              and we create a novel loss function called the Tversky–Kahneman Baroni–Urbani–Buser loss function. 
+              The loss function is built on the basement of the Baroni–Urbani–Buser coefficient and the 
+              Jaccard–Tanimoto coefficient and reformulated in the Tversky–Kahneman probability-weighting function. 
+              We have evaluated our algorithm on the four popular datasets: the 2018 Data Science Bowl Cell Nucleus Segmentation dataset, 
+              the Brain Tumor LGG Segmentation dataset, the Skin Lesion ISIC 2018 dataset and the MRI cardiac ACDC dataset. 
+              Several comparisons have proved that our proposed approach is noticeably promising and 
+              some of the segmentation results provide new state-of-the-art results.</p>
             </div>
           </div>
         </article>
@@ -137,8 +157,7 @@
 
     </section>
   </main>
-
-  <!-- ✅ publications JS -->
+  
   <script src="./assets/js/publications.js"></script>
 </body>
 </html>
