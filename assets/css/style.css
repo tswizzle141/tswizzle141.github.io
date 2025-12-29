@@ -232,51 +232,84 @@ h1 {
 }
 
 .publications {
-  margin-top: 48px;
+  margin-top: 56px;
 }
-.publications h2 {
-  margin-bottom: 28px;
+.pub {
+  display: grid;
+  grid-template-columns: 140px 1fr; 
+  gap: 22px;
+  padding: 18px 0;
+  border-top: 1px solid var(--border);
 }
-.pub-item {
-  display: flex;
-  gap: 20px;
-  margin-bottom: 32px;
-  align-items: flex-start;
+.pub:first-of-type {
+  border-top: none;
+  padding-top: 0;
 }
-.pub-item img {
+.pub-thumb img {
   width: 140px;
-  height: auto;
-  border-radius: 8px;
+  height: 92px;
+  object-fit: cover;
+  border-radius: 12px;
   border: 1px solid var(--border);
+  box-shadow: 0 10px 24px rgba(123, 95, 207, 0.20);
 }
-.pub-content h3 {
+.pub-title {
   margin: 0 0 6px 0;
   font-size: 18px;
-  font-weight: 600;
-}
-.pub-content .authors {
-  margin: 0;
-  color: var(--muted);
-  font-size: 14px;
-}
-.pub-content .venue {
-  margin: 4px 0 10px;
-  font-size: 14px;
-}
-.pub-links a {
-  display: inline-block;
-  margin-right: 8px;
-  padding: 4px 10px;
-  font-size: 12px;
-  border: 1px solid var(--border);
-  border-radius: 4px;
+  font-weight: 600; /* vừa, không quá đậm */
+  line-height: 1.35;
   color: #ffffff;
-  text-decoration: none;
 }
-.pub-links a:hover {
-  opacity: 0.8;
+.pub-authors {
+  font-size: 14px;
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 4px;
 }
+.pub-venue {
+  font-size: 14px;
+  color: rgba(255,255,255,0.80);
+  margin-bottom: 12px;
+}
+.pub-actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.pub-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 
+  padding: 6px 12px;
+  border-radius: 8px;
+
+  border: 1px solid rgba(255,255,255,0.35);
+  background: rgba(255,255,255,0.10);
+
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.4px;
+
+  text-decoration: none;
+  cursor: pointer;
+}
+.pub-btn:hover {
+  opacity: 0.85;
+}
+.pub-abstract {
+  border: 1px dashed rgba(255,255,255,0.35);
+  border-radius: 12px;
+  padding: 14px 14px;
+  background: rgba(0,0,0,0.08);
+}
+.pub-abstract p {
+  margin: 0;
+  color: rgba(255,255,255,0.88);
+  font-size: 14px;
+  line-height: 1.6;
+} 
 
 hr {
   border: none;
@@ -319,12 +352,12 @@ ul, li {
     height: 200px;
   }
 
-  .pub-item {
-    flex-direction: column;
+  .pub {
+    grid-template-columns: 1fr;
   }
-  .pub-item img {
+  .pub-thumb img {
     width: 100%;
-    max-width: 320px;
+    height: 180px;
   }
 }
 
