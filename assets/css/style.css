@@ -318,6 +318,50 @@ h1 {
   line-height: 1.6;
 } 
 
+.news{
+  margin: 32px 0;
+}
+.news .section-title{
+  margin: 0 0 18px 0; /* giống selected publications */
+}
+.news-list{
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 900px;
+}
+.news-item{
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 18px;
+  align-items: start;
+}
+.news-date{
+  font-weight: 600;
+  opacity: 0.9;
+  white-space: nowrap;
+}
+.news-text{
+  opacity: 0.95;
+  line-height: 1.5;
+}
+.news-text a{
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  opacity: 0.95;
+}
+.news-text a:hover{
+  opacity: 1;
+}
+.news-item{
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+.news-item:last-child{
+  border-bottom: none; 
+}
+
 hr {
   border: none;
   border-top: 1px solid var(--border);
@@ -365,6 +409,14 @@ ul, li {
   .pub-thumb img {
     width: 100%;
     height: 180px;
+  }
+
+  .news-item{
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+  .news-date{
+    opacity: 0.85;
   }
 }
 
